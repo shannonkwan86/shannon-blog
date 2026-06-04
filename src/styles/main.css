@@ -32,6 +32,7 @@
   src: url("/assets/font/ZenMaruGothic-Medium.ttf") format("truetype");
   font-weight: 500;
   font-display: swap;
+  unicode-range: U+0000-00FF, U+2000-206F, U+20A0-20CF, U+2100-214F;
 }
 
 /* 导入 萝莉体 第二版 字体 */
