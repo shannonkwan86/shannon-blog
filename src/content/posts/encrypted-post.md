@@ -11,6 +11,7 @@ hideHomeContent: true
 alias: "private-note"
 tags: ["随笔", "加密"]
 category: "Notes"
+draft: true
 ---
 
 这篇文章被我暂时锁起来，用来测试博客的加密阅读功能，也给一些还没想好怎么公开表达的内容留个位置。
