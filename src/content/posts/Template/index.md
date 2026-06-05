@@ -4,7 +4,7 @@ published: 2026-06-05
 description: "建好站不知道写什么，把算法竞赛板子丢上来吧"
 image: "./cover.webp"
 tags: ["XCPC", "算法模板"]
-category: Notes
+category: XCPC
 draft: false
 ---
 
