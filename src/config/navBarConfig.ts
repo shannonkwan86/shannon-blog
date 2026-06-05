@@ -133,11 +133,11 @@ export const navBarConfig: NavBarConfig = {
     // 预设链接：归档
     LinkPreset.Archive,
 
-    // 自定义一级下拉菜单示例：外部链接集合
+    // 自定义一级下拉菜单示例：社交账号集合
     {
-      name: "Links",
+      name: "Social",
       url: "/links/",
-      icon: "material-symbols:link",
+      icon: "material-symbols:alternate-email",
       children: [
         {
           name: "GitHub",

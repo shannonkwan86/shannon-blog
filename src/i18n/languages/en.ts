@@ -10,6 +10,7 @@ export const en: Translation = {
 
 	// Navigation bar titles
 	[Key.navLinks]: "Links",
+	[Key.navSocial]: "Social",
 	[Key.navMy]: "My",
 	[Key.navAbout]: "About",
 	[Key.navOthers]: "Others",

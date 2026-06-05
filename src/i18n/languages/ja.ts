@@ -10,6 +10,7 @@ export const ja: Translation = {
 
 	// ナビゲーションバータイトル
 	[Key.navLinks]: "リンク",
+	[Key.navSocial]: "ソーシャル",
 	[Key.navMy]: "私の",
 	[Key.navAbout]: "情報",
 	[Key.navOthers]: "その他",
