@@ -82,7 +82,7 @@ export const devicesData: DeviceCategory = {
       image: "/images/device/maicong-a7-pro.webp",
       specs: "Wireless Mouse",
       description: "日常使用的无线鼠标，更多在游戏时使用。",
-      link: "https://www.mchose.store/da/products/mchose-a7-series-high-end-lightweight-wireless-mouse",
+      link: "https://www.mchose.store/products/mchose-a7-v2-series-lightweight-all-round-wireless-gaming-mouse",
     },
   ],
 };
