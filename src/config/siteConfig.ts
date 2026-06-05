@@ -47,12 +47,12 @@ export const siteConfig: SiteConfig = {
   },
 
   bangumi: {
-    userId: "your-bangumi-id", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
+    userId: "963712", // 在此处设置你的Bangumi用户ID，可以设置为 "sai" 测试
     fetchOnDev: false, // 是否在开发环境下获取 Bangumi 数据（默认 false），获取前先执行 pnpm build 构建 json 文件
   },
 
   bilibili: {
-    vmid: "your-bilibili-vmid", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
+    vmid: "3546704844426057", // 在此处设置你的Bilibili用户ID (uid)，例如 "1129280784"
     fetchOnDev: false, // 是否在开发环境下获取 Bilibili 数据（默认 false）
     coverMirror: "", // 封面图片镜像源（可选，如果需要使用镜像源，例如 "https://images.weserv.nl/?url="）
     useWebp: true, // 是否使用WebP格式（默认 true）

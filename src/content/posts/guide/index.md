@@ -1,52 +1,36 @@
 ---
-title: Simple Guides for Mizuki
-published: 2024-04-01
-description: "How to use this blog template."
+title: ᯤ³ᴳ Notes 开张记录
+published: 2026-06-05
+description: "给这个博客写下第一张施工牌：记录训练、学习和慢慢成形的生活频道。"
 image: "./cover.webp"
-tags: ["Mizuki", "Blogging", "Customization"]
-category: Guides
+tags: ["博客", "记录", "ACM", "软工"]
+category: Notes
 draft: false
 ---
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+这个博客先这样开张。
 
-## Front-matter of Posts
+它的名字是 **ᯤ³ᴳ Notes**，副标题写着 **Shannon's Channel**。我想把这里当成一个长期频道：不追求每一篇都完整成熟，但希望每一次训练、学习、折腾和回头看，都能留下可以继续生长的痕迹。
 
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: true
----
-```
+## 这里会记录什么
 
-| Attribute     | Description                                                                                                                                                                                                 |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`       | The title of the post.                                                                                                                                                                                      |
-| `published`   | The date the post was published.                                                                                                                                                                            |
-| `pinned`      | Whether this post is pinned to the top of the post list.                                                                                                                                                    |
-| `priority`    | The priority of the pinned post. Smaller value means higher priority (0, 1, 2...).                                                                                                                          |
-| `description` | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`       | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`        | The tags of the post.                                                                                                                                                                                       |
-| `category`    | The category of the post.                                                                                                                                                                                   |
-| `licenseName` | The license name for the post content.                                                                                                                                                                      |
-| `author`      | The author of the post.                                                                                                                                                                                     |
-| `sourceLink`  | The source link or reference for the post content.                                                                                                                                                          |
-| `draft`       | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
+我暂时给它分成几类内容：
 
-## Where to Place the Post Files
+- **ACM 训练**：题解、错题、模板整理，以及被一个细节卡住之后的复盘。
+- **软件工程学习**：课程笔记、项目开发、工程习惯和一些架构理解。
+- **博客施工**：主题配置、页面调整、样式修修补补，还有本站自己的更新日志。
+- **生活频道**：番剧、友链、设备、日常想法，慢慢补齐。
 
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
+## 为什么要写下来
 
-```
-src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.webp
-    └── index.md
-```
+很多东西只在脑子里过一遍，很快就会散。写下来不只是为了展示，更像是给自己留一个可搜索、可回看、可继续修改的外部记忆。
+
+算法题也是这样。一次 AC  不代表真正懂了，真正有用的是知道为什么会错、哪里可以更快、下次遇到相似结构时怎么反应。
+
+软件工程也一样。代码能跑只是起点，后面还有命名、边界、协作、维护成本，以及那些一开始看不出来、但迟早会来敲门的问题。
+
+## 施工中
+
+站点目前还在慢慢调整：页面、分类、文章内容和一些小组件都会继续改。侧边栏公告里那句「ACM训练中，软工学习中，博客施工中……」大概就是现在最准确的状态。
+
+如果之后这里能从一块施工地，变成一个真正稳定、有内容密度的小站，那就很好。

@@ -337,6 +337,7 @@ export interface AnnouncementConfig {
 	// enable属性已移除，现在通过sidebarLayoutConfig统一控制
 	title?: string; // 公告栏标题
 	content: string; // 公告栏内容
+	version?: string; // 公告版本，修改后会重新显示已关闭的公告
 	icon?: string; // 公告栏图标
 	type?: "info" | "warning" | "success" | "error"; // 公告类型
 	closable?: boolean; // 是否可关闭

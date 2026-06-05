@@ -1,135 +1,35 @@
 ---
-title: Encrypted Post
-published: 2024-01-15
-description: This is an article for testing the page encryption feature
+title: 私密备忘录
+published: 2026-06-05
+description: 一页暂时上锁的个人备忘，留给需要一点安静的时候。
 encrypted: true
 pinned: true
+priority: 0
 password: "123456"
-passwordHint: "123456"
+passwordHint: "试运行密码：123456"
 hideHomeContent: true
-alias: "encrypted-example"
-tags: ["Test", "Encryption"]
-category: "Technology"
+alias: "private-note"
+tags: ["随笔", "加密"]
+category: "Notes"
 ---
 
-This blog template is built with [Astro](https://astro.build/). For the things that are not mentioned in this guide, you may find the answers in the [Astro Docs](https://docs.astro.build/).
+这篇文章被我暂时锁起来，用来测试博客的加密阅读功能，也给一些还没想好怎么公开表达的内容留个位置。
 
-## Front-matter of Posts
+## 为什么需要一篇加密文章
 
-```yaml
----
-title: My First Blog Post
-published: 2023-09-09
-description: This is the first post of my new Astro blog.
-image: ./cover.jpg
-tags: [Foo, Bar]
-category: Front-end
-draft: true
----
-```
+博客不一定只能放完整、漂亮、已经下结论的文字。很多想法在形成之前都很凌乱：一段竞赛复盘、一次课程作业的卡点、某个半夜突然冒出来的念头。它们还不适合站到首页上，但也值得被保存。
 
-| Attribute         | Description                                                                                                                                                                                                 |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `title`           | The title of the post.                                                                                                                                                                                      |
-| `published`       | The date the post was published.                                                                                                                                                                            |
-| `pinned`          | Whether this post is pinned to the top of the post list.                                                                                                                                                    |
-| `description`     | A short description of the post. Displayed on index page.                                                                                                                                                   |
-| `image`           | The cover image path of the post.<br/>1. Start with `http://` or `https://`: Use web image<br/>2. Start with `/`: For image in `public` dir<br/>3. With none of the prefixes: Relative to the markdown file |
-| `tags`            | The tags of the post.                                                                                                                                                                                       |
-| `category`        | The category of the post.                                                                                                                                                                                   |
-| `alias`           | alias for the post. The post will be accessible at `/posts/{alias}/`. Example: `my-special-article` (will be available at `/posts/my-special-article/`)                                                     |
-| `licenseName`     | The license name for the post content.                                                                                                                                                                      |
-| `author`          | The author of the post.                                                                                                                                                                                     |
-| `sourceLink`      | The source link or reference for the post content.                                                                                                                                                          |
-| `draft`           | If this post is still a draft, which won't be displayed.                                                                                                                                                    |
-| `encrypted`       | Whether this post is password protected.                                                                                                                                                                    |
-| `password`        | The password to unlock the encrypted post.                                                                                                                                                                  |
-| `passwordHint`    | A hint to help users remember the password. Displayed below the password input.                                                                                                                             |
-| `hideHomeContent` | Whether to hide public post summaries, including the home page, meta tags, feed/API summaries, and share previews. Defaults to `true` when `password` is set.                                               |
+加密文章就是这个小抽屉。它提醒我，公开表达和私人整理并不冲突；有些内容先被好好安放，之后才可能变成真正能分享的东西。
 
-## Where to Place the Post Files
+## 这里会放什么
 
-Your post files should be placed in `src/content/posts/` directory. You can also create sub-directories to better organize your posts and assets.
+- ACM 训练里的错题、坑点和复盘。
+- 软件工程学习过程中的设计笔记。
+- 博客改造时暂时不想放到首页的实验记录。
+- 一些更偏私人语气的碎碎念。
 
-```
-src/content/posts/
-├── post-1.md
-└── post-2/
-    ├── cover.png
-    └── index.md
-```
+## 试运行说明
 
-## Posts alias
+当前密码仍然保留为 `123456`，方便在站点上线前确认加密流程是否正常。等后续内容真的开始写进来，再把密码和提示换成正式版本。
 
-You can set a alias for any post by adding the `alias` field to the front-matter:
-
-```yaml
----
-title: My Special Article
-published: 2024-01-15
-alias: "my-special-article"
-tags: ["Example"]
-category: "Technology"
----
-```
-
-When a alias is set:
-
-- The post will be accessible at the custom URL (e.g., `/posts/my-special-article/`)
-- The default `/posts/{slug}/` URL will still work
-- RSS/Atom feeds will use the custom alias
-- All internal links will automatically use the custom alias
-
-**Important Notes:**
-
-- Alias should NOT include `/posts/` prefix (it will be added automatically)
-- Avoid special characters and spaces in alias
-- Use lowercase letters and hyphens for best SEO practices
-- Make sure alias are unique across all posts
-- Don't include leading or trailing slashes
-
-## How It Works
-
-```mermaid
-graph LR
-    A[User Password] --> B[Direct AES Decryption]
-    B --> C{Check Prefix?}
-    C -- "MIZUKI-VERIFY:" found --> D[Success: Render Content]
-    C -- Random/Garbage --> E[Fail: Wrong Password]
-```
-
-## Page Encryption
-
-You can password protect any post by setting `encrypted: true` and providing a `password` in the front-matter:
-
-```yaml
----
-title: My Private Post
-published: 2024-01-15
-encrypted: true
-password: "my-secret-password"
-passwordHint: "Hint: The password is my dog's name"
-hideHomeContent: true
----
-```
-
-### Fields
-
-| Field             | Required | Description                                                                                                                    |
-| ----------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `encrypted`       | Yes      | Set to `true` to enable password protection                                                                                    |
-| `password`        | Yes      | The password to unlock the post                                                                                                |
-| `passwordHint`    | No       | A hint displayed below the password input to help users                                                                        |
-| `hideHomeContent` | No       | Hide public summaries as `该文章已加密`. Defaults to `true` when `password` is set. Set to `false` to show the normal summary. |
-
-### How the Unlock Box Looks
-
-The unlock box displays:
-
-- A lock icon in the theme's primary color
-- The post title "Password Protected"
-- A description asking for the password
-- A hint (if `passwordHint` is provided)
-- A password input field and unlock button
-
-After entering the correct password, the content is decrypted and displayed. The password is stored in session storage so users don't need to re-enter it on subsequent page loads within the same session.
+愿这个小角落能帮我把杂乱的东西慢慢收束起来。
