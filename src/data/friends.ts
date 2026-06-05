@@ -55,7 +55,7 @@ export const friendsData: FriendItem[] = [
   {
     id: 6,
     title: "CS 自学指南",
-    imgurl: "https://csdiy.wiki/favicon.ico",
+    imgurl: "https://csdiy.wiki/images/favicon.ico",
     desc: "计算机科学自学路线与优质课程资源整理。",
     siteurl: "https://csdiy.wiki/",
     tags: ["CS", "Wiki", "中文"],
