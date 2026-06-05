@@ -7,7 +7,7 @@ import Markdown from "@components/misc/Markdown.astro";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 
 import { siteConfig } from "../config";
-import { getShuffledFriendsList } from "../data/friends";
+import { getGroupedFriendsList } from "../data/friends";
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
 
@@ -24,8 +24,15 @@ if (!friendsPost) {
 }
 
 const { Content } = await render(friendsPost);
-const friendsList = getShuffledFriendsList();
+const friendGroups = getGroupedFriendsList();
+const friendsList = friendGroups.flatMap(([, items]) => items);
 const allTags = Array.from(new Set(friendsList.flatMap((item) => item.tags)));
+const groupLabelMap = {
+	Friends: "友链",
+	OJs: "竞赛平台",
+	Wikis: "学习资源",
+	Tools: "工具服务",
+} as const;
 ---
 
 <MainGridLayout
@@ -97,9 +104,25 @@ const allTags = Array.from(new Set(friendsList.flatMap((item) => item.tags)));
 			<!-- 友链卡片网格 -->
 			<div
 				id="friends-grid"
-				class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 mb-6"
+				class="space-y-8 mb-6"
 			>
-				{friendsList.map((item) => <FriendCard friend={item} />)}
+				{
+					friendGroups.map(([group, items]) => (
+						<section class="friend-group" data-group={group}>
+							<div class="flex items-center justify-between gap-4 mb-4">
+								<h2 class="text-xl font-bold text-black/90 dark:text-white/90">
+									{groupLabelMap[group]}
+								</h2>
+								<span class="text-sm text-black/45 dark:text-white/45">
+									{items.length}
+								</span>
+							</div>
+							<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+								{items.map((item) => <FriendCard friend={item} />)}
+							</div>
+						</section>
+					))
+				}
 			</div>
 
 			<!-- 无结果提示 -->

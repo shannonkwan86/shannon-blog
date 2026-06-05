@@ -202,9 +202,9 @@ export const navBarConfig: NavBarConfig = {
           icon: "material-symbols:person",
         },
         {
-          name: "Friends",
+          name: "Links",
           url: "/friends/",
-          icon: "material-symbols:group",
+          icon: "material-symbols:link",
         },
       ],
     },

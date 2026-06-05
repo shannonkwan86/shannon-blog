@@ -29,6 +29,7 @@
 
 		var tagFilters = document.querySelectorAll(".filter-tag");
 		var friendCards = document.querySelectorAll(".friend-card");
+		var friendGroups = document.querySelectorAll(".friend-group");
 		var copyButtons = document.querySelectorAll(".copy-link-btn");
 
 		console.log("[Friends Global] Found elements:", {
@@ -98,6 +99,14 @@
 			} else {
 				noResults.classList.add("hidden");
 				friendsGrid.classList.remove("hidden");
+			}
+
+			for (var groupIndex = 0; groupIndex < friendGroups.length; groupIndex++) {
+				var group = friendGroups[groupIndex];
+				var visibleCards = group.querySelectorAll(
+					'.friend-card:not([style*="display: none"])',
+				);
+				group.style.display = visibleCards.length > 0 ? "" : "none";
 			}
 		}
 
