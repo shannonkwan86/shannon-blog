@@ -1,49 +1,29 @@
+## 关于我
 
-This website is built with the **Astro** framework using the [Mizuki](https://github.com/LyraVoid/Mizuki) theme.
+我是 Shannon，一名软件工程学生，也是一名 ACM/ICPC 方向的算法竞赛选手。
 
-::github{repo="LyraVoid/Mizuki"}
+平时主要在写题、补题、学工程，也折腾过一些和 Web、工具链、自动化有关的小项目。这个站用来记录我的学习、训练、项目和一些生活碎片。
 
-## 🌟 Theme Features
+## 我在关注什么
 
-### 🎨 Design & User Experience
-- **Modern & Elegant Design** - Clean, minimalist interface with beautiful typography
-- **Fully Responsive** - Optimized for all devices from mobile to desktop
-- **Dark/Light Mode** - Automatic theme switching with smooth transitions
-- **Beautiful Typography** - Enhanced readability with JetBrains Mono font
-- **Smooth Animations** - Fluid page transitions and interactive elements
+- 算法竞赛：数据结构、图论、动态规划、数学、字符串等
+- 软件工程：前端、后端、工程化、代码质量、Agent
+- 开发工具：脚本、自动化、效率工具
+- 个人记录：训练复盘、项目日志和日常想法
 
-### 🔍 Content & Search
-- **Advanced Search** - Powered by [Pagefind](https://pagefind.app/) for fast, accurate results
-- **Enhanced Markdown** - Extended syntax with code highlighting and math support
-- **Interactive Table of Contents** - Auto-scroll navigation for long articles
-- **RSS Feed Generation** - Stay updated with automatic feed generation
-- **Reading Time Estimation** - Know how long articles take to read
-- **Post Categorization** - Organize content with tags and categories
+## 这个站会写什么
 
+这里不会只放“正确答案”，也会放一些没想明白、后来又想通的过程。
 
+我希望它更像一个长期运行的笔记本：有算法题解，有工程实践，有踩坑记录，也有一些和技术无关的生活片段。
 
-### 📱 Special Pages
-- **Anime Tracking Page** - Track your anime watching progress with ratings
-- **Friends Links Page** - Showcase friend websites with beautiful cards
-- **Diary/Moments Page** - Share life moments like social media posts
-- **Archive Page** - Organized timeline view of all posts
-- **About Page** - Customizable personal introduction (this page!)
+## 现在的我
 
-### 🛠 Technical Features
-- **Enhanced Code Blocks** - Powered by [Expressive Code](https://expressive-code.com/)
-- **Math Support** - LaTeX rendering with KaTeX for mathematical expressions
-- **Image Optimization** - PhotoSwipe gallery with lazy loading
-- **SEO Optimized** - Built-in sitemap and meta tags for better search visibility
-- **Performance Optimized** - Fast loading with caching and optimization
-- **Comment System Ready** - Integration support for Twikoo comments
+目前还是学生阶段，正在备战ICPC区域赛。
 
-### 🎯 Advanced Markdown Features
-- **Callouts & Admonitions** - Beautiful info boxes with `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`
-- **Mathematical Equations** - Write LaTeX math with `$inline$` and `$$block$$` syntax
-- **GitHub Cards** - Embed repository cards with `::github{repo="user/repo"}`
-- **Syntax Highlighting** - Advanced code highlighting with line numbers
-- **Copy Code Buttons** - Easy code copying functionality
+希望记录的内容对你有帮助。
 
----
+## 找到我
 
-*Built with ❤️ using Astro and inspired by modern web design principles.*
+- GitHub: https://github.com/shannonkwan86
+- Bilibili: https://space.bilibili.com/3546704844426057
