@@ -56,7 +56,7 @@ export const friendsData: FriendItem[] = [
     imgurl: "https://vjudge.net/favicon.ico",
     desc: "聚合多个 OJ 的训练平台，常用于组题、补题和虚拟赛。",
     siteurl: "https://vjudge.net",
-    tags: ["OJ", "Contest"],
+    tags: ["OJ"],
   },
   {
     id: 6,
@@ -74,16 +74,17 @@ export const friendsData: FriendItem[] = [
     imgurl: "https://www.luogu.com.cn/favicon.ico",
     desc: "学算法模版，适合刷题、训练。",
     siteurl: "https://www.luogu.com.cn/",
-    tags: ["OJ", "Contest"],
+    tags: ["OJ"],
   },
   {
     id: 8,
     title: "QOJ",
     group: "OJs",
-    imgurl: "https://raw.githubusercontent.com/UniversalOJ/UOJ-System/master/web/images/favicon.ico",
-    desc: "区域赛题目合集。",
+    imgurl:
+      "https://raw.githubusercontent.com/UniversalOJ/UOJ-System/master/web/images/favicon.ico",
+    desc: "ICPC区域赛题目合集。",
     siteurl: "https://qoj.ac/",
-    tags: ["OJ", "Contest"],
+    tags: ["OJ"],
   },
   {
     id: 9,
