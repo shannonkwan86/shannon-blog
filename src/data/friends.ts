@@ -72,9 +72,27 @@ export const friendsData: FriendItem[] = [
     title: "洛谷",
     group: "OJs",
     imgurl: "https://www.luogu.com.cn/favicon.ico",
-    desc: "主要用来学算法模版，适合刷题、训练。",
+    desc: "学算法模版，适合刷题、训练。",
     siteurl: "https://www.luogu.com.cn/",
     tags: ["OJ", "Contest"],
+  },
+  {
+    id: 8,
+    title: "QOJ",
+    group: "OJs",
+    imgurl: "https://qoj.ac/favicon.ico",
+    desc: "区域赛题目合集。",
+    siteurl: "https://qoj.ac/",
+    tags: ["OJ", "Contest"],
+  },
+  {
+    id: 9,
+    title: "Manmu Blog",
+    group: "Friends",
+    imgurl: "http://blog-manmu.top/favicon.ico",
+    desc: "Manmu Blog",
+    siteurl: "http://blog-manmu.top/",
+    tags: ["Blog", "Friend"],
   },
 ];
 
