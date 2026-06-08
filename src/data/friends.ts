@@ -90,7 +90,7 @@ export const friendsData: FriendItem[] = [
     id: 9,
     title: "Manmu Blog",
     group: "Friends",
-    imgurl: "http://blog-manmu.top/favicon/favicon.ico",
+    imgurl: "/assets/friends/manmu.ico",
     desc: "Manmu Blog",
     siteurl: "http://blog-manmu.top/",
     tags: ["Blog", "Friend"],
