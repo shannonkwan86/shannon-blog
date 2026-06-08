@@ -1,9 +1,10 @@
 ---
 title: "[自用] 算法竞赛模板"
 published: 2026-06-05
-description: "建好站不知道写什么，把算法竞赛板子丢上来吧"
+updated: 2026-06-09
+description: "建好站不知道写什么，把算法竞赛板子丢上来吧。持续更新中。"
 image: "./cover.webp"
-tags: ["XCPC", "算法模板"]
+tags: ["算法模板"]
 category: XCPC
 draft: false
 ---

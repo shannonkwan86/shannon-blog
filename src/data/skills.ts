@@ -28,7 +28,7 @@ export const skillsData: Skill[] = [
 		category: "frontend",
 		level: "advanced",
 		experience: { years: 3, months: 6 },
-		projects: ["mizuki-blog", "portfolio-website", "data-visualization-tool"],
+		projects: ["personal-blog", "portfolio-website", "data-visualization-tool"],
 		color: "#F7DF1E",
 	},
 	{
@@ -40,7 +40,7 @@ export const skillsData: Skill[] = [
 		category: "frontend",
 		level: "advanced",
 		experience: { years: 2, months: 8 },
-		projects: ["mizuki-blog", "portfolio-website", "task-manager-app"],
+		projects: ["personal-blog", "portfolio-website", "task-manager-app"],
 		color: "#3178C6",
 	},
 	{
@@ -112,7 +112,7 @@ export const skillsData: Skill[] = [
 		category: "frontend",
 		level: "advanced",
 		experience: { years: 1, months: 2 },
-		projects: ["mizuki-blog"],
+		projects: ["personal-blog"],
 		color: "#FF5D01",
 	},
 	{
@@ -124,7 +124,7 @@ export const skillsData: Skill[] = [
 		category: "frontend",
 		level: "advanced",
 		experience: { years: 2, months: 0 },
-		projects: ["mizuki-blog", "portfolio-website"],
+		projects: ["personal-blog", "portfolio-website"],
 		color: "#06B6D4",
 	},
 	{
