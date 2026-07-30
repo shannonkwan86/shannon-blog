@@ -2,7 +2,7 @@
 title: "2026 牛客暑假多校1部分题解"
 published: 2026-07-27
 description: "2026 牛客暑期多校训练营第一场 A、C、E、F、G 题解与赛后复盘。"
-tags: ["并查集"]
+tags: ["并查集", "构造"]
 category: XCPC
 draft: false
 lang: zh-CN
