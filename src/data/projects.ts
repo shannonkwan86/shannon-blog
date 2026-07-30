@@ -3,7 +3,6 @@ export interface Project {
 	title: string;
 	description: string;
 	image?: string;
-	category: "web" | "mobile" | "desktop" | "other";
 	techStack: string[];
 	status: "completed" | "in-progress" | "planned";
 	showStatus?: boolean;
@@ -23,7 +22,6 @@ export const projectsData: Project[] = [
 		title: "go-torrent-client",
 		description:
 			"一个用 Go 编写的精简 BitTorrent 下载客户端，用于学习协议解析、网络并发与分块下载。",
-		category: "other",
 		techStack: ["Go", "BitTorrent", "TCP"],
 		status: "in-progress",
 		showStatus: false,
@@ -44,11 +42,6 @@ export const getProjectStats = () => ({
 		planned: projectsData.filter((project) => project.status === "planned").length,
 	},
 });
-
-export const getProjectsByCategory = (category?: string) =>
-	!category || category === "all"
-		? projectsData
-		: projectsData.filter((project) => project.category === category);
 
 export const getFeaturedProjects = () =>
 	projectsData.filter((project) => project.featured);
