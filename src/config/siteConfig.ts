@@ -102,7 +102,7 @@ export const siteConfig: SiteConfig = {
   banner: {
     // 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
     src: {
-      desktop: "/assets/desktop-banner/2.webp?v=2", // 桌面横幅图片
+      desktop: "/assets/desktop-banner/shannon-campus-v2.webp", // 桌面横幅图片
       mobile: "/assets/mobile-banner/shannon-mobile.webp?v=2", // 移动横幅图片
     }, // 使用本地横幅图片
 

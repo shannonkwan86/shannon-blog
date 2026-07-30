@@ -5,7 +5,7 @@ export const fullscreenWallpaperConfig: FullscreenWallpaperConfig = {
 	// wallpaper modes prevents browser-local preferences from changing it.
 	enable: false,
 	src: {
-		desktop: "/assets/desktop-banner/2.webp?v=2",
+		desktop: "/assets/desktop-banner/shannon-campus-v2.webp",
 		mobile: "/assets/mobile-banner/shannon-mobile.webp?v=2",
 	},
 	position: "center",
