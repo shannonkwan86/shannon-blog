@@ -3,7 +3,12 @@ import { render } from "astro:content";
 import { getPostHomeContent } from "@utils/post-card-content";
 import { Icon } from "astro-icon/components";
 
-import { getFileDirFromPath, getPostUrl, getTagUrl } from "@/utils/url-utils";
+import {
+	getCategoryUrl,
+	getFileDirFromPath,
+	getPostUrl,
+	getTagUrl,
+} from "@/utils/url-utils";
 
 import { siteConfig } from "../../../config";
 import I18nKey from "../../../i18n/i18nKey";
@@ -32,6 +37,12 @@ const {
 const url = getPostUrl(entry);
 const hasCover = image !== undefined && image !== null && image !== "";
 const coverWidth = "28%";
+const postTypeMap: Record<string, { label: string; icon: string }> = {
+	XCPC: { label: "XCPC", icon: "material-symbols:emoji-events" },
+	Labs: { label: "Labs", icon: "material-symbols:science" },
+	Notes: { label: "Notes", icon: "material-symbols:edit-note" },
+};
+const postType = category ? postTypeMap[category] : undefined;
 
 const { remarkPluginFrontmatter } = await render(entry);
 const homeContent = getPostHomeContent(
@@ -93,12 +104,26 @@ const homeContent = getPostHomeContent(
 			/>
 		</a>
 
+		{
+			postType && (
+				<a
+					href={getCategoryUrl(category)}
+					class="inline-flex items-center gap-1.5 mb-3 px-2.5 py-1 rounded-md bg-[var(--primary)]/10 text-[var(--primary)] text-xs font-bold hover:bg-[var(--primary)]/15 transition-colors"
+					aria-label={`查看 ${postType.label} 分类文章`}
+				>
+					<Icon name={postType.icon} class="text-base" />
+					{postType.label}
+				</a>
+			)
+		}
+
 		<PostMetadata
 			published={published}
 			updated={updated}
 			tags={tags}
 			category={category || ""}
 			hideTagsForMobile={true}
+			hideCategory={true}
 			hideUpdateDate={true}
 			className="mb-4"
 			showOnlyBasicMeta={true}

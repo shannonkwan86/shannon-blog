@@ -13,6 +13,7 @@ export interface PostMetaProps {
 	category?: string;
 	tags?: string[];
 	hideUpdateDate?: boolean;
+	hideCategory?: boolean;
 	hideTagsForMobile?: boolean;
 	isHome?: boolean;
 	className?: string;

@@ -105,16 +105,9 @@ export function getAnimeList(
 		if (currentConfig.type === "local") {
 			animeList = currentConfig.data;
 		} else if (currentConfig.type === "json") {
-			const isDev = import.meta.env.DEV;
-			const shouldFetchOnDev = currentConfig.fetchOnDev ?? false;
-			const skipLoad = isDev && !shouldFetchOnDev;
-
-			if (skipLoad) {
-				console.log(`[Dev] Skipping ${mode} data load (fetchOnDev is off).`);
-				animeList = [];
-			} else {
-				animeList = loadAnimeData(currentConfig.filename);
-			}
+			// The updater writes a local snapshot. Render that snapshot in both
+			// development and production so previews match the deployed page.
+			animeList = loadAnimeData(currentConfig.filename);
 		}
 	} else {
 		console.warn(`[Anime] Unknown or unconfigured mode: ${mode}`);
