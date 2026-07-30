@@ -6,6 +6,7 @@ export interface Project {
 	category: string;
 	techStack: string[];
 	status: "completed" | "in-progress" | "planned";
+	showStatus?: boolean;
 	demoUrl?: string;
 	sourceUrl?: string;
 	liveDemo?: string;

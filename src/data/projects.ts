@@ -6,6 +6,7 @@ export interface Project {
 	category: "web" | "mobile" | "desktop" | "other";
 	techStack: string[];
 	status: "completed" | "in-progress" | "planned";
+	showStatus?: boolean;
 	liveDemo?: string;
 	sourceCode?: string;
 	visitUrl?: string;
@@ -25,6 +26,7 @@ export const projectsData: Project[] = [
 		category: "other",
 		techStack: ["Go", "BitTorrent", "TCP"],
 		status: "in-progress",
+		showStatus: false,
 		sourceCode: "https://github.com/shannonkwan86/go-torrent-client",
 		startDate: "2026-07-01",
 		featured: true,
