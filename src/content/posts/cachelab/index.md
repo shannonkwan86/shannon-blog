@@ -1,5 +1,5 @@
 ---
-title: "CSAPP Cache Lab 实验记录"
+title: "[CSAPP] Cache Lab 实验记录" 
 published: 2026-08-01
 description: "Part A 实现缓存模拟器，Part B 优化矩阵转置的访存方式减少缓存未命中。"
 image: ""
