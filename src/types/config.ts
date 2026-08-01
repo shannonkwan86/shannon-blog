@@ -233,7 +233,8 @@ export interface ProfileConfig {
 	bio?: string;
 	links: {
 		name: string;
-		url: string;
+		url?: string;
+		copyText?: string;
 		icon: string;
 	}[];
 	typewriter?: {

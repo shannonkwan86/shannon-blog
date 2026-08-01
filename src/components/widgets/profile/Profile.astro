@@ -60,17 +60,30 @@ import TypewriterText from "../../atoms/typewriter-text/TypewriterText.astro";
 		<div class="flex flex-wrap gap-2 justify-center mb-1">
 			{
 				profileConfig.links.length > 1 &&
-					profileConfig.links.map((item) => (
-						<a
-							rel="me"
-							aria-label={item.name}
-							href={item.url}
-							target="_blank"
-							class="btn-regular rounded-lg h-10 w-10 active:scale-90"
-						>
-							<Icon name={item.icon} class="text-[1.5rem]" />
-						</a>
-					))
+					profileConfig.links.map((item) =>
+						item.copyText ? (
+							<button
+								type="button"
+								aria-label={item.name}
+								title={item.name}
+								data-profile-copy={item.copyText}
+								class="btn-regular rounded-lg h-10 w-10 active:scale-90"
+							>
+								<Icon name={item.icon} class="text-[1.5rem]" />
+							</button>
+						) : (
+							<a
+								rel="me"
+								aria-label={item.name}
+								title={item.name}
+								href={item.url}
+								target={item.url?.startsWith("mailto:") ? undefined : "_blank"}
+								class="btn-regular rounded-lg h-10 w-10 active:scale-90"
+							>
+								<Icon name={item.icon} class="text-[1.5rem]" />
+							</a>
+						),
+					)
 			}
 			{
 				profileConfig.links.length == 1 && (
@@ -109,6 +122,41 @@ import TypewriterText from "../../atoms/typewriter-text/TypewriterText.astro";
 		</div>
 	</div>
 </div>
+
+<script is:inline>
+	if (!window.__profileCopyHandlerReady) {
+		window.__profileCopyHandlerReady = true;
+		document.addEventListener("click", (event) => {
+			const target = event.target;
+			const button = target?.closest?.("[data-profile-copy]");
+			const copyText = button?.dataset.profileCopy;
+			if (!button || !copyText) return;
+
+			if (navigator.clipboard?.writeText) {
+				void navigator.clipboard
+					.writeText(copyText)
+					.catch((error) => console.error("复制 QQ 号失败:", error));
+			}
+
+			const originalLabel = button.getAttribute("aria-label") || "复制 QQ";
+			button.setAttribute("aria-label", "QQ 已复制");
+			button.title = "QQ 已复制";
+			button.classList.add("profile-copy-success");
+			setTimeout(() => {
+				button.setAttribute("aria-label", originalLabel);
+				button.title = originalLabel;
+				button.classList.remove("profile-copy-success");
+			}, 1600);
+		});
+	}
+</script>
+
+<style>
+	.profile-copy-success {
+		color: var(--btn-content);
+		background: var(--btn-regular-bg-active);
+	}
+</style>
 
 <script
 	is:inline
