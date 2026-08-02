@@ -7,10 +7,10 @@ export const DEFAULT_VOLUME = 0.7;
 export const LOCAL_PLAYLIST: Song[] = [
   {
     id: 1,
-    title: "ヨルシカ - 藍二乗",
+    title: "ヨルシカ - だから僕は音楽を辞めた",
     artist: "Yorushika",
-    cover: "assets/music/cover/ヨルシカ - 藍二乗.webp",
-    url: "assets/music/url/ヨルシカ - 藍二乗.mp3",
+    cover: "assets/music/cover/ヨルシカ - だから僕は音楽を辞めた.webp",
+    url: "assets/music/url/ヨルシカ - だから僕は音楽を辞めた.mp3",
     duration: 0,
   },
   // {
