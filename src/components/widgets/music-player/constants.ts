@@ -9,8 +9,8 @@ export const LOCAL_PLAYLIST: Song[] = [
     id: 1,
     title: "ヨルシカ - だから僕は音楽を辞めた",
     artist: "Yorushika",
-    cover: "assets/music/cover/ヨルシカ - だから僕は音楽を辞めた.webp",
-    url: "assets/music/url/ヨルシカ - だから僕は音楽を辞めた.mp3",
+    cover: "assets/music/cover/yorushika-dakara-boku-wa-ongaku-o-yameta.webp",
+    url: "assets/music/url/yorushika-dakara-boku-wa-ongaku-o-yameta.mp3",
     duration: 0,
   },
   // {
