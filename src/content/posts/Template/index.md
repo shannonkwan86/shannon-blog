@@ -6,6 +6,7 @@ description: "建好站不知道写什么，把算法竞赛板子丢上来吧。
 image: "./cover.webp"
 tags: ["算法模板"]
 category: XCPC
+pinned: true
 draft: false
 ---
 
