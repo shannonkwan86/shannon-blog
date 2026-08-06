@@ -1,7 +1,7 @@
 ---
 title: "2026夏 - 题三城行记以待归来"
 published: 2026-08-07
-description: "参加南昌、成都、重庆三场 XCPC 系列赛事的夏日见闻与赛季回望。"
+description: "参加南昌、成都、重庆三场 XCPC 系列赛事的赛季回望。"
 tags: ["XCPC", "游记", "总结"]
 category: "随笔"
 draft: false
