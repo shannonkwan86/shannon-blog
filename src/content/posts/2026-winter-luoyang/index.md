@@ -1,7 +1,7 @@
 ---
 title: "2026冬 - 中转古城的陌路同行"
 published: 2026-02-27
-description: "在洛阳中转返校时，与一位陌生同行者的短暂相遇"
+description: "在洛阳中转返校时，与一位陌生同行者的短暂相遇。"
 tags: ["游记"]
 category: "随笔"
 draft: false
