@@ -1,7 +1,7 @@
 ---
 title: "2026 牛客暑期多校 7：部分题解"
 published: 2026-08-08
-description: "2026 牛客暑期多校训练营第七场 A、K、L、G 题解与赛后补题草稿。"
+description: "2026 牛客暑期多校训练营第七场 K、L、G、A 题解与赛后补题。"
 tags: ["字符串", "数论", "构造", "博弈", "位运算", "贪心"]
 category: XCPC
 draft: false
