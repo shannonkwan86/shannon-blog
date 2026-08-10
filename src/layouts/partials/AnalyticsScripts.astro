@@ -3,15 +3,12 @@
  * AnalyticsScripts.astro
  * 第三方分析脚本组件 - 延迟加载优化
  *
- * 包含:
- * - Google Tag Manager (GTM)
- * - Microsoft Clarity (可选，通过 thirdPartyAnalytics 配置控制)
+ * 包含 Microsoft Clarity（可选，通过 thirdPartyAnalytics 配置控制）。
  *
  * 使用 requestIdleCallback 延迟加载以优化性能
  */
 
 interface Props {
-	gtmId?: string;
 	thirdPartyAnalytics?: {
 		enable: boolean;
 		clarityId?: string;
@@ -19,7 +16,6 @@ interface Props {
 }
 
 const {
-	gtmId = "GTM-KRX3XGVH",
 	thirdPartyAnalytics = { enable: false, clarityId: "" },
 } = Astro.props;
 
@@ -31,7 +27,6 @@ const clarityEnable =
 <script
 	is:inline
 	define:vars={{
-		gtmId,
 		clarityEnable,
 		clarityId: thirdPartyAnalytics.clarityId || "",
 	}}
@@ -45,20 +40,6 @@ const clarityEnable =
 				return;
 			}
 			window.analyticsLoaded = true;
-
-			// Google Tag Manager
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({
-					"gtm.start": new Date().getTime(),
-					event: "gtm.js",
-				});
-				const f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s);
-				j.async = true;
-				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, "script", "dataLayer", gtmId);
 
 			// Clarity (仅在启用时加载)
 			if (clarityEnable && clarityId) {
