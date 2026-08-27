@@ -3,7 +3,7 @@ title: "[启发式合并] 浅析 Union by Size、Small to Large 和 DSU on Tree"
 published: 2026-08-23
 description: "从 Union by Size 到树上容器合并，理解 Small to Large 与 DSU on Tree。"
 tags: ["启发式合并", "Union by Size", "Small to Large", "DSU on Tree"]
-category: Notes
+category: XCPC
 draft: false
 lang: zh-CN
 ---
