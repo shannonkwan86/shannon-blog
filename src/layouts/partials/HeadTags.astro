@@ -49,6 +49,7 @@ const favicons: Favicon[] =
 <!-- SEO Meta Tags -->
 <title>{title}</title>
 <meta name="description" content={description || title} />
+<link rel="canonical" href={Astro.url} />
 {
 	keywords && keywords.length > 0 && (
 		<meta name="keywords" content={keywords.join(", ")} />

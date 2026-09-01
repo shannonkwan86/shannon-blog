@@ -6,7 +6,8 @@ const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 export const siteConfig: SiteConfig = {
   title: "ᯤ³ᴳ Notes",
   subtitle: "Shannon’s Channel",
-  siteURL: "https://shannon-blog-3ro.pages.dev/",
+  // 生产站点地址。绑定自定义域名后，sitemap、robots、RSS、OG 等都会以此为基准生成。
+  siteURL: "https://shannonkwan.cn/",
   siteStartDate: "2026-06-05", // 站点开始运行日期，用于站点统计组件计算运行天数
 
   lang: SITE_LANG,
