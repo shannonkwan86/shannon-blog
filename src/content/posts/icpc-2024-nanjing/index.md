@@ -2,7 +2,7 @@
 title: "2024 ICPC 区域赛南京站：部分题解"
 published: 2026-09-16
 description: "2024 ICPC 区域赛南京站的赛后题解与复盘记录。"
-tags: ["VP", "题解"]
+tags: ["构造"]
 category: XCPC
 draft: false
 lang: zh-CN
