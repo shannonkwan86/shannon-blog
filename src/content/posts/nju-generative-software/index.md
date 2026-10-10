@@ -5,7 +5,7 @@ updated: 2026-10-11
 description: "回顾生成式软件工程前两讲：从意图与实现的缺口，到上下文、验证与探索，以及我对 AI 辅助学习的思考。"
 tags: ["软件工程"]
 category: "NJU-生成式软件工程"
-draft: true
+draft: false
 lang: zh-CN
 ---
 
