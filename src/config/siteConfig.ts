@@ -136,7 +136,6 @@ export const siteConfig: SiteConfig = {
       title: "Shannon’s Channel",
       switchable: true,
 
-      subtitle: ["老实打A，很枯燥吧"],
       typewriter: {
         enable: true, // 启用副标题打字机效果
 

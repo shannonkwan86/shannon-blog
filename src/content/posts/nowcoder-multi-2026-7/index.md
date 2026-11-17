@@ -4,7 +4,7 @@ published: 2026-08-08
 description: "2026 牛客暑期多校训练营第七场 K、L、G、A、H 题解与赛后补题。"
 tags: ["字符串", "数论", "构造", "博弈", "位运算", "贪心", "取模"]
 category: XCPC
-draft: false
+draft: true
 lang: zh-CN
 ---
 
